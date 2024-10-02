@@ -72,7 +72,8 @@ Complete? Yes or No
 <!--If you answer Yes, insert a screenshot image to show the completion.-->
 Yes
 
-![Image caption](images/demo.png){width=90%}
+![Q2 1](https://github.com/user-attachments/assets/ebdc5062-8a58-478f-9502-c79886fe5c2c)
+
 
 <!-- If No, add a short description to describe the issues encountered.-->
 
@@ -81,8 +82,10 @@ Yes
 Complete? Yes or No 
 
 <!--If you answer Yes, insert a screenshot image to show the completion.-->
+Yes
 
-![Image caption](images/demo.png){width=90%}
+![Q2 2](https://github.com/user-attachments/assets/f7518b43-e64b-4d55-8085-b60c49fd37c2)
+
 
 <!-- If No, add a short description to describe the issues encountered.-->
 
@@ -92,9 +95,8 @@ Complete? Yes or No
 
 <!--If you answer Yes, insert a screenshot image to show the completion.-->
 
-![Image caption](images/demo.png){width=90%}
-
 <!-- If No, add a short description to describe the issues encountered.-->
+No. I couldn't see the downloaded bitmap file in my folder. I am able to reload it back to the screen though...
 
 
 ## Q3 SimpleDraw (programming)
@@ -105,41 +107,40 @@ Complete? Yes or No
 Complete? Yes or No 
 
 <!--If you answer Yes, insert a screenshot image to show the completion. -->
+Yes
 
-![Image caption](images/demo.png){width=90%}
-
-<!--If No, add a short description to describe the issues encountered.-->
+![Screenshot 2024-10-01 234807](https://github.com/user-attachments/assets/f4add10b-7c1d-4545-b651-66215140f423)
 
 
 ### Q3.2 Data structures
 
 Complete? Yes or No 
 
-<!--If you answer Yes, insert a screenshot image to show the completion. -->
+Yes, this is a small snippet of the codes regarding that.
 
-![Image caption](images/demo.png){width=90%}
-
-<!--If No, add a short description to describe the issues encountered.-->
+![Screenshot 2024-10-01 235030](https://github.com/user-attachments/assets/8ca5da8a-5be6-48f4-a723-6644241481eb)
 
 
 ### Q3.3 Draw rectangles
 
-Complete? Yes or No 
+Complete? Yes or No
 
 <!--If you answer Yes, insert a screenshot image to show the completion. -->
+Yes and No. I'm only able to show one rectangle one at a time. Also no move and edit feature.
 
-![Image caption](images/demo.png){width=90%}
+![Screenshot 2024-10-01 235156](https://github.com/user-attachments/assets/6ecbb422-2a89-4b06-b8f9-8077f60a29ae)
+
 
 <!--If No, add a short description to describe the issues encountered.-->
-
 
 ### Q3.4 Draw circles
 
 Complete? Yes or No 
 
-<!--If you answer Yes, insert a screenshot image to show the completion. -->
+Yes and No. I'm only able to show a circle one at a time. Also no move and edit feature.
 
-![Image caption](images/demo.png){width=90%}
+![Screenshot 2024-10-01 235305](https://github.com/user-attachments/assets/01845869-2d2b-42b3-bf62-5a2c07b35b60)
+
 
 <!--If No, add a short description to describe the issues encountered.-->
 
@@ -148,9 +149,7 @@ Complete? Yes or No
 
 Complete? Yes or No 
 
-<!--If you answer Yes, insert a screenshot image to show the completion. -->
-
-![Image caption](images/demo.png){width=90%}
+No. Didn't do
 
 <!--If No, add a short description to describe the issues encountered.-->
 
@@ -159,31 +158,20 @@ Complete? Yes or No
 
 Complete? Yes or No
 
-If you answer Yes, link the image
-![output.bmp](images/output.svg).
+No. Didn't do
 
 
 ### Q3.7 Export to bitmap
 
-Complete? Yes or No
-
-If you answer Yes, link the image
-![ouput.bmp](images/output.bmp).
+No. Didn't do
 
 
 ### Q3.8 Circle&Square artwork
 
-Complete? Yes or No
-
-If you answer Yes, link the images
-[C&S artwork in SVG](images/c&s.svg)
-![C&S artwork in bitmap](images/c&s.bmp).
-
-
+No. Didn't do
 
 
 **References**
 
 1. CP411 a2
-2. Add your references if you used any. 
 
