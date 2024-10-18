@@ -40,7 +40,7 @@ Write your solution on paper, and take a photo, save it as a3q2.png to the image
 
 Complete? Yes
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+![class example in c++](https://github.com/user-attachments/assets/e024c1bf-3252-41dc-811a-faaa93ec7de5)
 
 
 ### Q2.2 2D transformations 
