@@ -52,20 +52,18 @@ Complete? Yes
 
 ### Q2.3 3D objects and transformations 
 
-Complete? Yes or No 
+Complete? Yes
 
 <img src="https://github.com/user-attachments/assets/47e97581-3fad-410a-9aa5-3cf71f7d4fce" width="50%" alt="3D Transformation" />
 
 
 ### Q2.4 Mesh object model 
 
-Complete? Yes or No 
+Complete? Yes 
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+<img src="https://github.com/user-attachments/assets/b72c4696-def1-4713-8be7-8f8896d5bd08" width="50%" alt="Mesh Object Model" />
 
-![Image caption](images/demo.png){width=90%}
 
-<!-- If No, add a short description to describe the issues encountered.-->
 
 
 ## Q3 SimpleView1 - transformations (programming)
