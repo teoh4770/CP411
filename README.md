@@ -38,23 +38,18 @@ Write your solution on paper, and take a photo, save it as a3q2.png to the image
 
 ### Q2.1 Warm up with C++ 
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion.-->
 
-![Image caption](images/demo.png){width=90%}
-
-<!-- If No, add a short description to describe the issues encountered.-->
+<img src="https://github.com/user-attachments/assets/69bbf433-834b-4661-a000-5587c3ecc226" alt="2D Transformation" />
 
 ### Q2.2 2D transformations 
 
-Complete? Yes or No 
+Complete? Yes 
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+<img src="https://github.com/user-attachments/assets/47e97581-3fad-410a-9aa5-3cf71f7d4fce" width="50%" alt="3D Transformation" />
 
-![Image caption](images/demo.png){width=90%}
-
-<!-- If No, add a short description to describe the issues encountered.-->
 
 ### Q2.3 3D objects and transformations 
 
