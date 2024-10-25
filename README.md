@@ -71,73 +71,68 @@ Complete? Yes
 
 ### Q3.1 Create and render cube objects
 
-Complete? Yes or No 
+Complete? Yes
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion. -->
-
-![Image caption](images/demo.png){width=90%}
-
-<!--If No, add a short description to describe the issues encountered.-->
-
+![Screenshot 2024-10-25 at 3 05 41 PM](https://github.com/user-attachments/assets/6664f8c8-1c26-4e39-bcbf-14f173dd52b8)
 
 ### Q3.2 Create and render pyramid object
 
-Complete? Yes or No 
+Complete? Yes 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+![Screenshot 2024-10-25 at 3 05 41 PM](https://github.com/user-attachments/assets/6664f8c8-1c26-4e39-bcbf-14f173dd52b8)
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.3 Create and render house object
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+![Screenshot 2024-10-25 at 3 05 41 PM](https://github.com/user-attachments/assets/6664f8c8-1c26-4e39-bcbf-14f173dd52b8)
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.4 MCS transforms
 
-Complete? Yes or No 
+Complete? Yes 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
-
-![Image caption](images/demo.png){width=90%}
-
+![Screenshot 2024-10-25 at 3 09 08 PM](https://github.com/user-attachments/assets/608efd76-a1b3-41c7-9ba7-639976e64c15)
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.5 WCS transforms
 
-Complete? Yes or No 
+Complete? Yes(80%)
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+Only able to rotate with respect to origin
+
+![Screenshot 2024-10-25 at 3 11 47 PM](https://github.com/user-attachments/assets/5b3d31e6-e18e-4e44-99af-b902ddd0ec61)
+
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.6 VCS transforms
 
-Complete? Yes or No 
+Complete? No 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
-
 <!--If No, add a short description to describe the issues encountered.-->
-
+Short Description: unable to finish it in time.
 
 
 
 **References**
 
-1. CP411 a3
-2. Add your references if you used any. 
+1. CP411 a3 SimpleView1 Sample
+2. CP411 slides
+3. CP411 textbook 
