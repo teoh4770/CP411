@@ -23,8 +23,8 @@ Q1.3 [5/5/*] Concepts of lighting and shading
 Q1.4 [5/5/*] Lighting computing                      
 
 Q2 OpenGL Culling, Lighting, Shading
-Q2.1 [0/5/*] Hidden surface removal                  
-Q2.2 [0/5/*] Lighting and shading                    
+Q2.1 [5/5/*] Hidden surface removal                  
+Q2.2 [5/5/*] Lighting and shading                    
 Q2.3 [0/0/*] Animation                               
 
 Q3 SimpleView2 Culling, Lighting, Shading
