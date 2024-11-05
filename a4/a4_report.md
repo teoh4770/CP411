@@ -35,6 +35,8 @@ Given:
 
 Write your solution on paper, and take a picture using laptop camera, save it as a4q1.2.png to the images folder and link to the a4_report.md
 
+![a4q1 2](https://github.com/user-attachments/assets/3c0944e4-2bf5-42ce-9111-18a57d543a03)
+
 
 ### Q1.3 Concepts of lighting and shading
 
@@ -74,6 +76,7 @@ Compute the simple diffusion reflection intensity of red color at the center of 
 
 Write your solution on paper, and take a photo, save it as a4q1.4.png to the images folder and link to the a4_report.md
 
+![a4q1 4](https://github.com/user-attachments/assets/66bd86d1-0e0a-46b6-b27c-0051f264ef3d)
 
 
 ## Q2 OpenGL Culling, Lighting, Shading (lab practice)
