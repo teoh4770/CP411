@@ -128,6 +128,10 @@ Purpose: to learn how to program material reflection properties
 
 Purpose: see how to use OpenGL API to configure overall light model material, spot light, ambient light and spectacular
 
+Note: diffuse = matte surface; specular = reflective surface like glass or metal
+
+![Increment the red component of diffuse material to make it appear more red when reflected by light](https://github.com/user-attachments/assets/446fb976-65a6-4fc6-8a0d-215fa351433a)
+
 <!-- If No, add a short description to describe the issues encountered.-->
 
 ### Q2.3 Animation 
