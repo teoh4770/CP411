@@ -104,7 +104,13 @@ Complete? Yes
 
 Purpose: learn how to do a dimple light setting to draw a lit sphere.
 
-Note: Try different values of light position, colors in mat_specular, to see the resulted effects.
+Note1: Try different values of light position, colors in mat_specular, to see the resulted effects.
+
+Note2: change the color in mat_specular change the color of light being reflected
+
+![white color light reflected](https://github.com/user-attachments/assets/f661ff7b-f34d-4025-94bb-f23ebf5b98a8)
+
+![teal color light reflected](https://github.com/user-attachments/assets/236194a2-3118-4601-99b1-8650fd88df23)
 
 
 **Move a Light with Modeling Transformation**
