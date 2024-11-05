@@ -84,11 +84,13 @@ Write your solution on paper, and take a photo, save it as a4q1.4.png to the ima
 
 ### Q2.1 Hidden surface removal 
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+![Without culling](https://github.com/user-attachments/assets/12b81c6c-83d8-41dc-bc03-45987d741838)
+![With culling](https://github.com/user-attachments/assets/5ed8bd61-139d-419c-95bc-1c0459594c3a)
+![Animation](https://github.com/user-attachments/assets/4d59bce4-dd98-422a-a2ca-bd79fa7ec8c6)
 
-![Image caption](images/demo.png){width=90%}
 
 <!-- If No, add a short description to describe the issues encountered.-->
 
