@@ -96,11 +96,11 @@ Complete? Yes
 
 ### Q2.2 Lighting and shading 
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion.-->
-
-![Image caption](images/demo.png){width=90%}
+![light source at the back of the donut, front seems totally dark](https://github.com/user-attachments/assets/5f83dd6f-aacf-4a18-893c-2779518060b6)
+![light source at the bottom of the donut, can see some light coming from the bottom of the object](https://github.com/user-attachments/assets/58b567a5-5058-46e5-9164-6ade746e0c70)
 
 <!-- If No, add a short description to describe the issues encountered.-->
 
