@@ -8,13 +8,14 @@
 #include <GL/glut.h>
 #include <time.h>
 
-
-GLfloat v[8][3] = { /* declare array and initialize vertices of cube */{ -1.0, -1.0, 1.0 }, { -1.0, -1.0, -1.0 }, { -1.0, 1.0, -1.0 },
+/* declare array and initialize vertices of cube */
+GLfloat v[8][3] = { { -1.0, -1.0, 1.0 }, { -1.0, -1.0, -1.0 }, { -1.0, 1.0, -1.0 },
 		{ -1.0, 1.0, 1.0 }, { 1.0, -1.0, 1.0 }, { 1.0, -1.0, -1.0 }, { 1.0, 1.0,
 				-1.0 }, { 1.0, 1.0, 1.0 }
 };
 
-GLint face[6][4] = { /* Vertex indices for the 6 faces */
+/* Vertex indices for the 6 faces */
+GLint face[6][4] = {
 { 0, 3, 2, 1 }, { 2, 3, 7, 6 }, { 4, 5, 6, 7 }, { 0, 1, 5, 4 }, { 1, 2, 6, 5 },
 		{ 3, 0, 4, 7 } };
 
@@ -91,49 +92,75 @@ void move3(int speed)
 
 void init(void) {
 	/* Setup 3D view */
+    // Set Projection Matrix Mode, define how objects projected onto screen (like setting the lens of a camera)
 	glMatrixMode(GL_PROJECTION);
-	gluPerspective(40.0, /* field of view in degree */
-	1.0, /* aspect ratio */
-	1.0, /* Z near */
-	20.0 /* Z far */
+	gluPerspective(
+	40.0,  /* camera captures a natural narrow view, 10 deg is too small, 120 deg is fish eye */
+	1.0,   /* aspect ratio */
+	1.0,   /* Z near, In your case, zNear is set to 1.0, meaning objects closer than 1 unit from the camera won't be visible. */
+	20.0   /* Z far, */
 	);
+	// glMatrixMode(GL_MODELVIEW): used to position and orient objects in the scene.
+	// Where we setup the camera's position, also object transformation
 	glMatrixMode(GL_MODELVIEW);
-	gluLookAt(6.0, 3.0, 10.0, /* eye is at (0,0,5) */
-	0.0, 0.0, 0.0, /* center is at (0,0,0) */
-	0.0, 0.0, 1.0  /* up is in positive Y direction */
+	// gluLookAt: sets the camera position, center point it is looking at, and the up direction
+	gluLookAt(6.0, 3.0, 10.0, /* eye is at (0,0,5), at the top of the rendered object in 3d world */
+			  0.0, 0.0, 0.0,  /* center point, or origin of the camera is at (0,0,0) */
+			  0.0, 0.0, 1.0
 	);
 }
+
+/*
+ Culling:
+ glEnable/glDisable: enable and disable the gl setting
+ GL_CULL_FACE: OpenGL backface API
+ GL_DEPTH_TEST: OpenGL Depth buffer API
+
+ Animation:
+ glutIdleFunc(callback): animate using idle time
+ glutIdleFunc(callback) with clock(): animate using system time
+ glutTimerFunc(callback): animate using glut time
+ glutIdleFunc(NULL): stop the animation
+ * */
 
 void mainMenu(GLint option) {
 	switch (option) {
 	case 1:
+		// no culling
 		glDisable(GL_CULL_FACE);
 		glDisable(GL_DEPTH_TEST);
 		break;
 	case 2:
+		// culling: OpenGL backface api
 		glEnable(GL_CULL_FACE);
 		glDisable(GL_DEPTH_TEST);
 		break;
 	case 3:
+		// culling: OpenGL Depth buffer api
 		glDisable(GL_CULL_FACE);
 		glEnable(GL_DEPTH_TEST);
 		break;
 	case 4:
+		// Enable both
 		glEnable(GL_CULL_FACE);
 		glEnable(GL_DEPTH_TEST);
 		break;
 	case 5:
+		// Animate using idle time
 		glutIdleFunc(move1);
 		break;
 	case 6:
+		// Animate using system time
 		oldTime = clock();
 		glutIdleFunc(move2);
 		break;
 	case 7:
+		// Animate using glut time
 		startTimer = 1;
 	    glutTimerFunc(10, move3, 1);
 		break;
 	case 8:
+		// Stop animation
 		glutIdleFunc(NULL);
 		startTimer = 0;
 		break;
