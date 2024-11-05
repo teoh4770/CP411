@@ -145,11 +145,11 @@ Note: seems like different light have different light setting.
 
 ### Q2.3 Animation 
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+![A spinning cube that rotates at xy-axis](https://github.com/user-attachments/assets/c24f2a65-b120-413b-922a-bc398ffdd7a8)
 
-![Image caption](images/demo.png){width=90%}
 
 <!-- If No, add a short description to describe the issues encountered.-->
 
