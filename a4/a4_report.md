@@ -99,8 +99,28 @@ Complete? Yes
 Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+
+**Drawing a Lit Sphere**
+
+Purpose: learn how to do a dimple light setting to draw a lit sphere.
+
+Note: Try different values of light position, colors in mat_specular, to see the resulted effects.
+
+
+**Move a Light with Modeling Transformation**
+
+Purpose: to see how to transfer light positions
+
 ![light source at the back of the donut, front seems totally dark](https://github.com/user-attachments/assets/5f83dd6f-aacf-4a18-893c-2779518060b6)
 ![light source at the bottom of the donut, can see some light coming from the bottom of the object](https://github.com/user-attachments/assets/58b567a5-5058-46e5-9164-6ade746e0c70)
+
+**Programming material reflection properties**
+
+Purpose: to learn how to program material reflection properties
+
+**General lighting and shading**
+
+Purpose: see how to use OpenGL API to configure overall light model material, spot light, ambient light and spectacular
 
 <!-- If No, add a short description to describe the issues encountered.-->
 
