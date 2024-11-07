@@ -159,51 +159,80 @@ Complete? Yes
 
 ### Q3.1 Culling
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
+**No culling**
 
-![Image caption](images/demo.png){width=90%}
+<img width="696" alt="no_culling" src="https://github.com/user-attachments/assets/2cace9e7-935d-4035-a5f3-c3dfe454aa0a">
+<hr />
+
+**Custom backface culling**
+
+<img width="696" alt="my_back_culling" src="https://github.com/user-attachments/assets/e636a7c5-f05e-4c9a-9714-2cca1cf84463">
+<hr />
+
+**Built-in backface & depth buffer**
+
+<img width="696" alt="built-in-culling" src="https://github.com/user-attachments/assets/3a44c322-f9e7-4363-94f5-224e66cf5d6c">
+
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.2 Lighting
 
-Complete? Yes or No 
+Complete? No, I complete the lighting effect, but I kinda make the lighting not align with the cube that represent the lighting position.
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+![Screenshot 2024-11-07 at 11 19 31 AM](https://github.com/user-attachments/assets/32b97227-c2bb-4365-b024-9482ca9b2c17)
+
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.3 Shading
 
-Complete? Yes or No 
+Complete? No, only finish no shading and my constant shading
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+**No shading**
+
+![No shading](https://github.com/user-attachments/assets/2a2fd90a-2117-441b-a53b-e132d4a510a8)
+<hr />
+
+**My constant shading**
+
+![Constant shading](https://github.com/user-attachments/assets/ed89f090-dc54-40ea-b6b4-bbfa9c27c41a)
+<hr />
 
 <!--If No, add a short description to describe the issues encountered.-->
+<!--Can't figure out how shading work for flat shading and smooth shading.-->
 
 
 ### Q3.4 Animations
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+**Single object animation**
+
+![single_animation](https://github.com/user-attachments/assets/6881df5e-f835-4440-a6ae-1c81da13f7bb)
+<hr/>
+
+**Multiple object animation**
+
+![multiple_animation](https://github.com/user-attachments/assets/0c25cac2-5a99-4843-9995-93c571dac338)
+
 
 <!--If No, add a short description to describe the issues encountered.-->
-
-
 
 
 **References**
 
 1. CP411 a4
-2. Add your references if you used any. 
+2. CP411 a4 slides
+3. SimpleView2_reference_design
