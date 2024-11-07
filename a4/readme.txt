@@ -28,7 +28,7 @@ Q2.2 [5/5/*] Lighting and shading
 Q2.3 [0/0/*] Animation                               
 
 Q3 SimpleView2 Culling, Lighting, Shading
-Q3.1 [0/20/*] Culling                                 
+Q3.1 [20/20/*] Culling                                 
 Q3.2 [0/15/*] Lighting                                
 Q3.3 [0/20/*] Shading                                 
 Q3.4 [0/15/*] Animations                              
