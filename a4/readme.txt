@@ -33,4 +33,4 @@ Q3.2 [0/15/*] Lighting
 Q3.3 [0/20/*] Shading                                 
 Q3.4 [0/15/*] Animations                              
 
-Total: [30/100/*]
+Total: [50/100/*]
