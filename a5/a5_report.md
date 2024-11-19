@@ -1,8 +1,8 @@
 # A5 Report
 
-Author: ??? 
+Author: Chee Kian Teoh
 
-Date: YYYY-MM-DD 
+Date: 2024-11-18 
 
 Check [readme.txt](readme.txt) for course work statement and self-evaluation. 
   
@@ -11,14 +11,13 @@ Check [readme.txt](readme.txt) for course work statement and self-evaluation.
 
 ### Q1.1 Curve computing
 
-![Image caption](images/a5q1.1.png){width=90%}
+<img width="50%" src="https://github.com/user-attachments/assets/79a9964b-3f02-49f5-979b-24cad87c8bbd" alt="Q1.1" />
 
 ### Q1.2 Rotation surface and normal
 
-![Image caption](images/a5q1.2.png){width=90%}
+<img width="50%" src="https://github.com/user-attachments/assets/fb3e1a70-d538-4458-a6e8-69a3d985506f" alt="Q1.2" />
 
 ## Q2 Curve, surface, texture, GLSL (lab practice)
-
 
 ### Q2.1 Curve model and rendering 
 
