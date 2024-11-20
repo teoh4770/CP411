@@ -21,9 +21,9 @@ Q1.1 [5/5/*] Curve computing
 Q1.2 [5/5/*] Rotation surface and normal             
 
 Q2 Curve, surface, texture, GLSL
-Q2.1 [0/5/*] Curve model and rendering               
-Q2.2 [0/5/*] Surface model and rendering             
-Q2.3 [0/5/*] Texture mapping                         
+Q2.1 [5/5/*] Curve model and rendering               
+Q2.2 [5/5/*] Surface model and rendering             
+Q2.3 [5/5/*] Texture mapping                         
 Q2.4 [0/5/*] GPU programming by GLSL                 
 
 Q3 SimpleView3 - texture, GLSL, curve, surface
@@ -37,6 +37,6 @@ Q4 My Graphics Libraries and SimpleView
 Q4.1 [0/5/*] Creating libMyGL.a and libMyGL.dll      
 Q4.2 [0/5/*] Using libMyGL.a and libMyGL.dll         
 
-Total: [0/100/*]
+Total: [25/100/*]
 
 
