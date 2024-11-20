@@ -21,33 +21,25 @@ Check [readme.txt](readme.txt) for course work statement and self-evaluation.
 
 ### Q2.1 Curve model and rendering 
 
-Complete? Yes or No 
+Complete? Yes 
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+<img width="50%" src="https://github.com/user-attachments/assets/cc83925a-81b5-4bc9-b4ca-a22dfe2cd5cf" alt="Q2.1 Draw a circle" />
 
-![Image caption](images/demo.png){width=90%}
-
-<!-- If No, add a short description to describe the issues encountered.-->
+<img width="50%" src="https://github.com/user-attachments/assets/3f7d076a-7d7c-4f28-bf32-90ce491a345e" alt="Q2.1 Dynamically draw polynomial curve" />
 
 ### Q2.2 Surface model and rendering 
 
-Complete? Yes or No 
+Complete? Yes 
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+<img width="50%" src="https://github.com/user-attachments/assets/2209d3e1-edae-4fa1-bf86-94aa046ca948" alt="Q2.2 Cylinder Surface" />
 
-![Image caption](images/demo.png){width=90%}
-
-<!-- If No, add a short description to describe the issues encountered.-->
 
 ### Q2.3 Texture mapping 
 
-Complete? Yes or No 
+Complete? Yes 
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion.-->
+<img width="50%" src="https://github.com/user-attachments/assets/62e2152c-736a-4421-994a-36b4310bfc59" alt="Q2.2 square with sun texture" />
 
-![Image caption](images/demo.png){width=90%}
-
-<!-- If No, add a short description to describe the issues encountered.-->
 
 ### Q2.4 GPU programming by GLSL 
 
