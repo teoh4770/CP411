@@ -43,69 +43,71 @@ Complete? Yes
 
 ### Q2.4 GPU programming by GLSL 
 
-Complete? Yes or No 
+Complete? No 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion.-->
 
-![Image caption](images/demo.png){width=90%}
 
 <!-- If No, add a short description to describe the issues encountered.-->
+
+I couldn't run the file for some reasons.
 
 
 ## Q3 SimpleView3 - texture, GLSL, curve, surface (programming)
 
-
 ### Q3.1 Texture mapping basics
 
-Complete? Yes or No 
+Complete? Yes 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+<img width="50%" src="https://github.com/user-attachments/assets/b4cd694a-4bcf-4596-b06c-7fe359f8b4f7" alt="Q3.1 texture mapping cube and pyramid" />
+
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.2 Solar system with texture mapping
 
-Complete? Yes or No 
+Complete? Yes 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+<img width="50%" src="https://github.com/user-attachments/assets/8eb9ba6d-8ada-44c0-ae86-1143c4992dfa" alt="Q3.2 solar system with texture mapping" />
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.3 Bezier curve
 
-Complete? Yes or No 
+Complete? Yes
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+<img width="50%" src="https://github.com/user-attachments/assets/ecbf9e47-d1db-4302-b987-d568d453d004" alt="Q3.3 Bezier curve with 4 control points" />
+
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.4 Rotation surface of Bezier curve
 
-Complete? Yes or No 
+Complete? Yes
+
+<img width="50%" src="https://github.com/user-attachments/assets/99fd6092-7958-4f31-b36a-02b73e67b22b" alt="Q3.4 Rotation surface of Bezier curve around x-axis" />
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
-
-![Image caption](images/demo.png){width=90%}
 
 <!--If No, add a short description to describe the issues encountered.-->
 
 
 ### Q3.5 Phong shading by GLSL
 
-Complete? Yes or No 
+Complete? No 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+Not able to understand the implementation
 
 <!--If No, add a short description to describe the issues encountered.-->
 
@@ -116,22 +118,18 @@ Complete? Yes or No
 
 ### Q4.1 Creating libMyGL.a and libMyGL.dll
 
-Complete? Yes or No 
+Complete? Yes
 
-<!--If you answer Yes, insert one or more screenshot images to show the completion. -->
-
-![Image caption](images/demo.png){width=90%}
-
-<!--If No, add a short description to describe the issues encountered.-->
+![Screenshot 2024-11-21 at 9 10 07 PM](https://github.com/user-attachments/assets/4eaead9c-cd09-4ebf-ac7f-0c7d056407ca)
 
 
 ### Q4.2 Using libMyGL.a and libMyGL.dll
 
-Complete? Yes or No 
+Complete? No 
 
 <!--If you answer Yes, insert one or more screenshot images to show the completion. -->
 
-![Image caption](images/demo.png){width=90%}
+Somehow I'm unable to use the static or dynamic library I have created.
 
 <!--If No, add a short description to describe the issues encountered.-->
 
@@ -141,4 +139,3 @@ Complete? Yes or No
 **References**
 
 1. CP411 a5
-2. Add your references if you used any. 
