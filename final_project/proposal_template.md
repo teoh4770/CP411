@@ -6,23 +6,56 @@ Date: 2024-11-25
 
 ## Introduction  
 
-Remember the iconic DVD video logo bouncing around the dark screen? This nostalgic memory inspires our project: a simple 2D game called *DVD Logo Challenge*. Players control the movement of a moving  DVD logo using arrow keys, with the goal of making it hit the exact corners of the game window to score points. This project revives the thrill of watching the logo bounce perfectly into the corner while introducing interactivity through gameplay. 
+Remember the iconic DVD logo bouncing around the dark screen? This simple yet captivating animation sparked excitement as viewers eagerly awaited the moment it perfectly hit the corner of the screen. Inspired by this nostalgic memory, we present DVD Logo Challenge, an interactive 2D game that brings this iconic moment to life.
+
+In this game, players control the movement of the bouncing DVD logo using arrow keys, with the goal of making it hit the exact corners of the screen to score points. The game combines the simplicity of the original animation with interactive gameplay, challenging players to plan movements and react quickly to changing logo positions.
+
+The project aims to revive the joy of watching the DVD logo bounce while introducing a new layer of engagement through interactivity. It will also serve as a hands-on exercise in implementing key computer graphics concepts, such as collision detection, real-time rendering, and input handling.
 
 ## Problem Solving and Algorithms  
 
-### Major Problem  
-1. **Collision Detection:** Ensuring accurate detection of the DVD logo hitting the edges and corners of the game window.
-2. **Player Control:** Implementing smooth movement of the DVD logo using keyboard inputs while maintaining realistic bouncing physics.
+### Major Problem
+
+To create the DVD Logo Challenge, several technical challenges must be addressed:
+
+**Collision Detection**: The game requires accurate detection of when the DVD logo reaches the edges of the screen, particularly the corners, to ensure correct scoring and movement mechanics.
+
+**Player-Controlled Movement**: Smooth and intuitive player control of the DVD logo's movement direction using arrow keys, without breaking the bouncing physics of the logo.
+
+**Realistic Bouncing Physics**: Maintaining a natural bounce behavior when the logo collides with edges while preserving the exact angles of reflection.
+
+**Dynamic Color Changes**: Implementing color transitions when the logo bounces to visually signal collisions.
+
 
 ### Solutions  
-1. **Collision Detection Algorithm:**  
-   - Use boundary checks to detect when the DVD logo reaches the edges of the window.  
-   - Implement conditional logic to verify if the logo's coordinates match those of a corner.  
-2. **Movement and Gameplay Logic:**  
-   - Use an event listener to handle arrow key inputs, updating the logo's position dynamically.  
-   - Introduce velocity changes to simulate bouncing mechanics upon hitting an edge.  
-3. **Color Transition:**  
-   - Change the logo's color on every collision by cycling through predefined color values.  
+Collision Detection Algorithm
+Collision detection is implemented to determine whether the logo has hit the edges or corners of the screen. The algorithm comprises:
+
+**Boundary Detection**:
+Check if the logo's center position exceeds the screen's boundaries.
+
+Assuming the screen dimensions are width and height, and the logo's center is (x, y) with a radius r:
+Left boundary: x - r <= 0
+Right boundary: x + r >= width
+Top boundary: y - r <= 0
+Bottom boundary: y + r >= height
+
+**Corner Detection**:
+If the logo meets both a horizontal and vertical boundary condition, it is considered to have hit a corner.
+
+For example:
+Top-left corner: x - r <= 0 && y - r <= 0
+Bottom-right corner: x + r >= width && y + r >= height
+
+**Pseudocode Example**:
+def detect_collision(x, y, vx, vy, r, width, height):
+    if x - r <= 0 or x + r >= width:
+        vx = -vx  # Invert horizontal velocity
+        if y - r <= 0 or y + r >= height:
+            score += 1  # Corner hit
+    if y - r <= 0 or y + r >= height:
+        vy = -vy  # Invert vertical velocity
+    return vx, vy, score
 
 ## Design consideration of our CG project
 
