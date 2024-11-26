@@ -6,9 +6,9 @@ Date: 2024-11-25
 
 ## Introduction  
 
-Remember the iconic DVD logo bouncing around the dark screen? This simple yet captivating animation sparked excitement as viewers eagerly awaited the moment it perfectly hit the corner of the screen. Inspired by this nostalgic memory, we present DVD Logo Challenge, an interactive 2D game that brings this iconic moment to life.
+Remember the iconic DVD logo bouncing around a dark screen? This simple yet captivating animation sparked excitement as viewers eagerly awaited the moment it perfectly hit the corner of the screen. Inspired by this nostalgic memory, we present DVD Logo Challenge, an interactive 2D game that brings this iconic moment to life.
 
-In this game, players control the movement of the bouncing DVD logo using arrow keys, with the goal of making it hit the exact corners of the screen to score points. The game combines the simplicity of the original animation with interactive gameplay, challenging players to plan movements and react quickly to changing logo positions.
+In this game, players control the movement of the bouncing DVD logo using arrow keys, aiming to make it hit the exact corners of the screen to score points. The game combines the simplicity of the original animation with interactive gameplay, challenging players to plan ahead and react quickly to the logo's changing position.
 
 The project aims to revive the joy of watching the DVD logo bounce while introducing a new layer of engagement through interactivity. It will also serve as a hands-on exercise in implementing key computer graphics concepts, such as collision detection, real-time rendering, and input handling.
 
