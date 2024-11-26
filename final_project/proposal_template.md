@@ -1,8 +1,8 @@
 # CP411 Project: Your Project Title
 
-Author(s): names of team members
+Author(s): Wen Tao, Chee Kian Teoh
 
-Date: ####-##-##
+Date: 2024-11-25
 
 
 ## Introduction
@@ -15,11 +15,38 @@ The main problem to be solved, and algorithms. For example, how to pick up a 3D 
 
 Briefly describe the major computing problem and possible solutions.  
 
-
 ## Design consideration 
 
-1. System design of your CG project.  
-2. The architecture, e.g., the MVC (Model, View, Control) model.  
+### System design of our CG project
+
+**Components and their roles**
+
+- Edges of the Screen: Define boundaries for collision detection and scoring.
+- Logo: Represents the moving object, interacting with walls and edges.
+- Keyboard Inputs: Allows players to control the logo's moving direction through keyboard in real time.
+- Score Tracker: Keeps a real-time record of the user’s score when corners are hit.
+- Rendering System: Ensures a smooth visual experience for the player.
+
+**How these components come together**
+
+The logo starts by bouncing off from the corner of the edge of the screen. When the player presses an arrow key, it updates the moving direction of the logo. The collision detection system checks if the logo has hit an edge or corner. The logo bounces and change color, indicate that a collision is detected. The score tracker updates the player's score if the collision happens at a corner. The rendering system continously updates the screen to reflect these changes in real time.
+
+**User Stories**
+
+1. As a player, I want to use keyboard inputs to control the direction of the moving logo so I can aim for the screen corners.
+2. As a player, I want the logo bounces off walls at the correct angle.
+3. As a player, I want to see the logo changes color when bouncing to visually confirm the collision.
+4. As a player, I want to control the logo to hit the corner of the screen to score.
+5. As a player, I want the game to render in real time so I can see instant feedback on my action.
+
+
+### The architecture
+
+We will adopt an **MVC (Model, View, Controller)** design pattern:  
+
+- **Model:** Handles the game's logic, including position updates, collision detection, and scoring.  
+- **View:** Renders the DVD logo, window edges, and color transitions.  
+- **Controller:** Processes player input and communicates with the Model to update the game state.  
 
 
 ## Milestones & schedule
