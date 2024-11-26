@@ -1,19 +1,28 @@
-# CP411 Project: Your Project Title
+# CP411 Project: DVD Logo Challenge 
 
 Author(s): Wen Tao, Chee Kian Teoh
 
 Date: 2024-11-25
 
+## Introduction  
 
-## Introduction
+Remember the iconic DVD video logo bouncing around the dark screen? This nostalgic memory inspires our project: a simple 2D game called *DVD Logo Challenge*. Players control the movement of a moving  DVD logo using arrow keys, with the goal of making it hit the exact corners of the game window to score points. This project revives the thrill of watching the logo bounce perfectly into the corner while introducing interactivity through gameplay. 
 
-General description and rationals of your project. 
+## Problem Solving and Algorithms  
 
-The main problem to be solved, and algorithms. For example, how to pick up a 3D object by mouse in 3D view system.  
- 
-## Problem solving and algorithms
+### Major Problem  
+1. **Collision Detection:** Ensuring accurate detection of the DVD logo hitting the edges and corners of the game window.
+2. **Player Control:** Implementing smooth movement of the DVD logo using keyboard inputs while maintaining realistic bouncing physics.
 
-Briefly describe the major computing problem and possible solutions.  
+### Solutions  
+1. **Collision Detection Algorithm:**  
+   - Use boundary checks to detect when the DVD logo reaches the edges of the window.  
+   - Implement conditional logic to verify if the logo's coordinates match those of a corner.  
+2. **Movement and Gameplay Logic:**  
+   - Use an event listener to handle arrow key inputs, updating the logo's position dynamically.  
+   - Introduce velocity changes to simulate bouncing mechanics upon hitting an edge.  
+3. **Color Transition:**  
+   - Change the logo's color on every collision by cycling through predefined color values.  
 
 ## Design consideration of our CG project
 
