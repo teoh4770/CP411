@@ -15,9 +15,9 @@ The main problem to be solved, and algorithms. For example, how to pick up a 3D 
 
 Briefly describe the major computing problem and possible solutions.  
 
-## Design consideration 
+## Design consideration of our CG project
 
-### System design of our CG project
+### a. System design 
 
 **Components and their roles**
 
@@ -40,14 +40,22 @@ The logo starts by bouncing off from the corner of the edge of the screen. When 
 5. As a player, I want the game to render in real time so I can see instant feedback on my action.
 
 
-### The architecture
+### b. The architecture 
 
 We will adopt an **MVC (Model, View, Controller)** design pattern:  
 
-- **Model:** Handles the game's logic, including position updates, collision detection, and scoring.  
-- **View:** Renders the DVD logo, window edges, and color transitions.  
-- **Controller:** Processes player input and communicates with the Model to update the game state.  
-
+**Model (Game Logic)**, Handles the data and logic:
+- Keeps track of the logo’s position, velocity, and color.
+- Detects collisions and updates the score when the logo hits a corner.
+- Manages the player's score and resets the game state if needed.
+  
+**View (Rendering)**, manages what the user sees:
+- Draws the DVD logo, edges, and score on the screen.
+- Updates the visuals dynamically (e.g., changes the logo color after collisions).
+  
+**Controller (Input)**, handles player input:
+- Processes arrow key presses to move the DVD logo.
+- Communicates these actions to the Model to update the logo’s position.
 
 ## Milestones & schedule
 
