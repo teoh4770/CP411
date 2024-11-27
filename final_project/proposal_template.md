@@ -14,6 +14,8 @@ The project aims to revive the joy of watching the DVD logo bounce while introdu
 
 ## Problem Solving and Algorithms  
 
+### Challenges
+
 To create the DVD Logo Challenge, several technical challenges must be addressed:
 
 - **Collision Detection**: The game requires accurate detection of when the DVD logo reaches the edges of the screen, particularly the corners, to ensure correct scoring and movement mechanics.
@@ -24,9 +26,7 @@ To create the DVD Logo Challenge, several technical challenges must be addressed
 
 - **Dynamic Color Changes**: Implementing color transitions when the logo bounces to visually signal collisions.
 
-<br />
-
-**Notes on collision detection algirithm**
+### Algorithm
 
 Collision detection algorithm is implemented to determine whether the logo has hit the edges or corners of the screen. The algorithm comprises:
 
@@ -61,7 +61,9 @@ Collision detection algorithm is implemented to determine whether the logo has h
             vy = -vy  # Invert vertical velocity
         return vx, vy, score
 
-## Design consideration of our CG project
+## Design Considerations
+
+### System Design
 
 **Components and their roles**
 
@@ -83,7 +85,7 @@ The logo starts by bouncing off from the corner of the edge of the screen. When 
 4. As a player, I want to control the logo to hit the corner of the screen to score.
 5. As a player, I want the game to render in real time so I can see instant feedback on my action.
 
-<br />
+### Design Pattern
 
 We will adopt an **MVC (Model, View, Controller)** design pattern.
 
