@@ -14,52 +14,54 @@ The project aims to revive the joy of watching the DVD logo bounce while introdu
 
 ## Problem Solving and Algorithms  
 
-### Major Problem
-
 To create the DVD Logo Challenge, several technical challenges must be addressed:
 
-**Collision Detection**: The game requires accurate detection of when the DVD logo reaches the edges of the screen, particularly the corners, to ensure correct scoring and movement mechanics.
+- **Collision Detection**: The game requires accurate detection of when the DVD logo reaches the edges of the screen, particularly the corners, to ensure correct scoring and movement mechanics.
 
-**Player-Controlled Movement**: Smooth and intuitive player control of the DVD logo's movement direction using arrow keys, without breaking the bouncing physics of the logo.
+- **Player-Controlled Movement**: Smooth and intuitive player control of the DVD logo's movement direction using arrow keys, without breaking the bouncing physics of the logo.
 
-**Realistic Bouncing Physics**: Maintaining a natural bounce behavior when the logo collides with edges while preserving the exact angles of reflection.
+- **Realistic Bouncing Physics**: Maintaining a natural bounce behavior when the logo collides with edges while preserving the exact angles of reflection.
 
-**Dynamic Color Changes**: Implementing color transitions when the logo bounces to visually signal collisions.
+- **Dynamic Color Changes**: Implementing color transitions when the logo bounces to visually signal collisions.
 
+<br />
 
-### Solutions  
-Collision Detection Algorithm
-Collision detection is implemented to determine whether the logo has hit the edges or corners of the screen. The algorithm comprises:
+**Notes on collision detection algirithm**
 
-**Boundary Detection**:
-Check if the logo's center position exceeds the screen's boundaries.
+Collision detection algorithm is implemented to determine whether the logo has hit the edges or corners of the screen. The algorithm comprises:
 
-Assuming the screen dimensions are width and height, and the logo's center is (x, y) with a radius r:
-Left boundary: x - r <= 0
-Right boundary: x + r >= width
-Top boundary: y - r <= 0
-Bottom boundary: y + r >= height
+**Boundary Detection**: Check if the logo's center position exceeds the screen's boundaries.
 
-**Corner Detection**:
-If the logo meets both a horizontal and vertical boundary condition, it is considered to have hit a corner.
+> Assuming the screen dimensions are width and height, and the logo's center is (x, y) with a radius r:
+> 
+> Left boundary: x - r <= 0
+> 
+> Right boundary: x + r >= width
+> 
+> Top boundary: y - r <= 0
+> 
+> Bottom boundary: y + r >= height
 
-For example:
-Top-left corner: x - r <= 0 && y - r <= 0
-Bottom-right corner: x + r >= width && y + r >= height
+**Corner Detection**: If the logo meets both a horizontal and vertical boundary condition, it is considered to have hit a corner.
+
+> For example:
+> 
+> Top-left corner: x - r <= 0 && y - r <= 0
+> 
+> Bottom-right corner: x + r >= width && y + r >= height
 
 **Pseudocode Example**:
-def detect_collision(x, y, vx, vy, r, width, height):
-    if x - r <= 0 or x + r >= width:
-        vx = -vx  # Invert horizontal velocity
+
+    def detect_collision(x, y, vx, vy, r, width, height):
+        if x - r <= 0 or x + r >= width:
+            vx = -vx  # Invert horizontal velocity
+            if y - r <= 0 or y + r >= height:
+                score += 1  # Corner hit
         if y - r <= 0 or y + r >= height:
-            score += 1  # Corner hit
-    if y - r <= 0 or y + r >= height:
-        vy = -vy  # Invert vertical velocity
-    return vx, vy, score
+            vy = -vy  # Invert vertical velocity
+        return vx, vy, score
 
 ## Design consideration of our CG project
-
-### a. System design 
 
 **Components and their roles**
 
@@ -81,21 +83,23 @@ The logo starts by bouncing off from the corner of the edge of the screen. When 
 4. As a player, I want to control the logo to hit the corner of the screen to score.
 5. As a player, I want the game to render in real time so I can see instant feedback on my action.
 
+<br />
 
-### b. The architecture 
-
-We will adopt an **MVC (Model, View, Controller)** design pattern:  
+We will adopt an **MVC (Model, View, Controller)** design pattern.
 
 **Model (Game Logic)**, Handles the data and logic:
+
 - Keeps track of the logo’s position, velocity, and color.
 - Detects collisions and updates the score when the logo hits a corner.
 - Manages the player's score and resets the game state if needed.
   
 **View (Rendering)**, manages what the user sees:
+
 - Draws the DVD logo, edges, and score on the screen.
 - Updates the visuals dynamically (e.g., changes the logo color after collisions).
   
 **Controller (Input)**, handles player input:
+
 - Processes arrow key presses to move the DVD logo.
 - Communicates these actions to the Model to update the logo’s position.
 
@@ -106,18 +110,30 @@ List of tasks/milestones/check points of your project with time schedule. For gr
 
 | Task ID | Description   |  Due date | Lead   |  
 | :----:  | :------------ | :-----:   | :------: |  
-|  1      | Project research & team up | Day 7 of week 10 | who | 
-|  2      | Project proposal | Day 6 of week 11 | who |
-|  3      | Project check point  | date | who  |
-|  4      | Project check point  | date  | who  |
-|  5      | Project demonstration | Day 6 of week 12 | who  |
-|  6      | Project submission | Day 7 of week 12 | who   |
+|  1      | Project research & team up | Nov 25 | Wen Tao | 
+|  2      | Project proposal | Nov 26 | Chee Kian |
+|  3      | Project check point  | Nov 28 | -  |
+|  4      | Project check point  | Nov 1  | -  |
+|  5      | Project demonstration | Dec 5 | -  |
+|  6      | Project submission | Dec 3 | -   |
 
 
 
 ## References
 
-A list of references you read for your project, such as papers, articles, data sources. 
+1. LearnOpenGL. (n.d.). Collision detection. Retrieved from https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection
+
+2. opengl-tutorial.org. (n.d.). Tutorial 6: Keyboard and mouse. Retrieved from https://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
+
+3. MDN Web Docs. (n.d.). 3D collision detection - Game development techniques. Retrieved from https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection
+
+4. YouTube. (n.d.). OpenGL video tutorial - Collision detection. Retrieved from https://www.youtube.com/watch?v=Lg0kOoiCI80
+
+5. GitHub. (n.d.). jojoth/OpenTK-Course: Learn OpenTK and OpenGL game development. Retrieved from https://github.com/jojoth/OpenTK-Course
+
+6. DVD Game inspiration, DesignList. Retrieved from https://www.designslist.com/dvd
+
+7. Model-View-Controller, Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 
 
 **Comments**
