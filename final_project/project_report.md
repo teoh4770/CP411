@@ -48,27 +48,44 @@ see proposal
 ### R1.4 Milestones and schedule
  
 
-Complete? (Yes/No) 
+Complete? (Yes) 
 
-see proposal
+| Task ID | Description   |  Due date | Lead   |  
+| :----:  | :------------ | :-----:   | :------: |  
+|  1      | Project research & team up | Nov 25 | Wen Tao | 
+|  2      | Project proposal | Nov 26 | Chee Kian |
+|  3      | Programming milestones  | Nov 28 | Both  |
+|  4      | Final testing & demo prep  | Dec 1  | Both  |
+|  5      | Project demonstration | Dec 5 | Both  |
+|  6      | Project submission | Dec 3 | Both   |
 
 
 ### R1.5 References
  
 
-Complete? (Yes/No) 
+Complete? (Yes) 
 
-see proposal
+
+LearnOpenGL. (n.d.). Collision detection. Retrieved from https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection
+
+opengl-tutorial.org. (n.d.). Tutorial 6: Keyboard and mouse. Retrieved from https://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
+
+MDN Web Docs. (n.d.). 3D collision detection - Game development techniques. Retrieved from https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection
+
+YouTube. (n.d.). OpenGL video tutorial - Collision detection. Retrieved from https://www.youtube.com/watch?v=Lg0kOoiCI80
+
+GitHub. (n.d.). jojoth/OpenTK-Course: Learn OpenTK and OpenGL game development. Retrieved from https://github.com/jojoth/OpenTK-Course
+
+DVD Game inspiration, DesignList. Retrieved from https://www.designslist.com/dvd
+
+Model-View-Controller, Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 
 
 ### R1.6 Writing of the proposal
  
-
-Complete? (Yes/No) 
+Complete? (Yes) 
 
 see proposal
-
-
 
 
 
@@ -76,19 +93,17 @@ see proposal
 
 ### R2.1 Problem solving and algorithms
  
+Complete? (Yes) 
 
-Complete? (Yes/No) 
-
-If Yes, insert a screen shot image to show the completion.
+Collision detection is implemented to detect wall and corner hits. The logo's trajectory and velocity are adjusted based on these collisions, and colors change dynamically.
 
 [image caption](images/demo.png){width=90%}
 
-If No, add a short description to describe the issues encountered.
 
 ### R2.2 Completion of the project
  
 
-Complete? (Yes/No) 
+Complete? (Yes) 
 
 If Yes, insert a screen shot image to show the completion.
 
@@ -98,28 +113,25 @@ If No, add a short description to describe the issues encountered.
 
 ### R2.3 New features
  
+Complete? (Yes) 
 
-Complete? (Yes/No) 
+Dynamic color changes when the logo collides.
+Corner detection and scoring.
+Interactive controls for logo direction.
 
-If Yes, insert a screen shot image to show the completion.
-
-[image caption](images/demo.png){width=90%}
-
-If No, add a short description to describe the issues encountered.
 
 ### R2.4 Program design and organization
  
+Complete? (Yes) 
 
-Complete? (Yes/No) 
+Modular Design And MVC Design:
 
-If Yes, insert a screen shot image to show the completion.
+Logo Class: Handles animation, movement, and collision detection.
+Score Class: Manages scoring logic.
+Font Class: Renders text for messages and score display.
+Main Application: Coordinates user inputs, rendering, and game logic.
 
-[image caption](images/demo.png){width=90%}
-
-If No, add a short description to describe the issues encountered.
-
-
-
+Image here
 
 ## R3 Delivery (document)
 
@@ -133,7 +145,6 @@ If not presented in class, include media file, and add link to the medial file.
 
 ### R3.2 Documentation
  
-
 Complete? (Yes/No) 
 
 Add the hyperlinks to the documents. 
@@ -142,7 +153,7 @@ Add the hyperlinks to the documents.
 	
 
 ### R3.3 Submission packaging
- 
+
 
 Complete? (Yes/No) 
 
@@ -155,4 +166,10 @@ This package.
 **References**
 
 1. CP411 project
-2. Add your references if you used any. 
+2. LearnOpenGL. (n.d.). Collision detection. Retrieved from https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection
+3. opengl-tutorial.org. (n.d.). Tutorial 6: Keyboard and mouse. Retrieved from https://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
+4. MDN Web Docs. (n.d.). 3D collision detection - Game development techniques. Retrieved from https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection
+5. YouTube. (n.d.). OpenGL video tutorial - Collision detection. Retrieved from https://www.youtube.com/watch?v=Lg0kOoiCI80
+6. GitHub. (n.d.). jojoth/OpenTK-Course: Learn OpenTK and OpenGL game development. Retrieved from https://github.com/jojoth/OpenTK-Course
+7. DVD Game inspiration, DesignList. Retrieved from https://www.designslist.com/dvd
+8. Model-View-Controller, Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
