@@ -61,20 +61,7 @@ Complete? (Yes)
 
 Complete? (Yes) 
 
-
-LearnOpenGL. (n.d.). Collision detection. Retrieved from https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection
-
-opengl-tutorial.org. (n.d.). Tutorial 6: Keyboard and mouse. Retrieved from https://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/
-
-MDN Web Docs. (n.d.). 3D collision detection - Game development techniques. Retrieved from https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection
-
-YouTube. (n.d.). OpenGL video tutorial - Collision detection. Retrieved from https://www.youtube.com/watch?v=Lg0kOoiCI80
-
-GitHub. (n.d.). jojoth/OpenTK-Course: Learn OpenTK and OpenGL game development. Retrieved from https://github.com/jojoth/OpenTK-Course
-
-DVD Game inspiration, DesignList. Retrieved from https://www.designslist.com/dvd
-
-Model-View-Controller, Wikipedia. Retrieved from https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+<a href="proposal.md">Proposal</a>
 
 
 ### R1.6 Writing of the proposal
