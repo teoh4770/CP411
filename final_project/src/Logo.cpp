@@ -93,6 +93,15 @@ void Logo::detectCollision(GLsizei windowWidth, GLsizei windowHeight, Score &sco
 }
 
 void Logo::changeRandomColor() {
-	bgColor.r = static_cast<float>(rand()) / RAND_MAX; // between 0 and 1
-	bgColor.g = static_cast<float>(rand()) / RAND_MAX;
+	float newR, newG, newB;
+	do {
+		newR = static_cast<float>(rand()) / RAND_MAX;
+		newG = static_cast<float>(rand()) / RAND_MAX;
+		newB = static_cast<float>(rand()) / RAND_MAX;
+	} while (fabs(newR - bgColor.r) < 0.2f && fabs(newG - bgColor.g) < 0.2f
+			&& fabs(newB - bgColor.b) < 0.2f);
+
+	bgColor.r = newR;
+	bgColor.g = newG;
+	bgColor.b = newB;
 }
