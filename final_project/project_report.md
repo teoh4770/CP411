@@ -92,14 +92,14 @@ Complete? (Yes)
 
 Collision detection is implemented to detect wall and corner hits. The logo's trajectory and velocity are adjusted based on these collisions, and colors change dynamically.
 
-[collision algorithm itself](images/collision.png){width=90%}
+[collision algorithm at Logo.cpp](images/collision.png)
 
 
 ### R2.2 Completion of the project
  
 Complete? (Yes) 
 
-[running program](images/program.png){width=90%}
+[Running Program](images/program.png)
 
 
 ### R2.3 New features
@@ -108,15 +108,15 @@ Complete? (Yes)
 
 - Dynamic color changes when the logo collides with wall.
 
-[color change when logo collides with wall](images/color.png){width=90%}
+[Color changes when the logo collides with wall](images/color.png)
 
 - Corner detection and scoring.
 
-[scoring system](images/score.png){width=90%}
+[Score updates after the logo hits the corner](images/score.png)
 
 - Interactive controls for logo direction.
 
-[keyboard control](images/control.png){width=90%}
+[Keyboard control logic in main.cpp](images/control.png)
 
 
 ### R2.4 Program design and organization
@@ -130,7 +130,7 @@ Score Class: Manages scoring logic.
 Font Class: Renders text for messages and score display.
 Main Application: Coordinates user inputs, rendering, and game logic.
 
-[Simple MVC Graph](images/MVC.png){width=90%}
+[General MVC Diagram Sketch](images/MVC.png)
 
 ## R3 Delivery (document)
 
@@ -153,12 +153,9 @@ Add the hyperlinks to the documents.
 ### R3.3 Submission packaging
 
 
-Complete? (Yes/No) 
+Complete? (Yes) 
 
 This package.
-
-
-
 
 
 **References**
