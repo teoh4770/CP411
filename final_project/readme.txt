@@ -43,7 +43,6 @@ R2.4 [18/20/*] Program design and organization
 3. Delivery
 R3.1 [9/10/*] Presentation & demonstration
 
-
 R3.2 [5/5/*] Documentation
 
 R3.3 [5/5/*] Submission packaging
