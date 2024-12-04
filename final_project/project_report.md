@@ -130,7 +130,7 @@ Score Class: Manages scoring logic.
 Font Class: Renders text for messages and score display.
 Main Application: Coordinates user inputs, rendering, and game logic.
 
-[General MVC Diagram Sketch](images/MVC.png)
+[General MVC Diagram Sketch](images/mvc.png)
 
 ## R3 Delivery (document)
 
