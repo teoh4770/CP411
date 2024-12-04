@@ -27,7 +27,7 @@ Highlighted features:
 3. User-controlled direction via arrow keys.
 4. Real-time rendering with visual and functional feedback.
 
-<a href="proposal.html" target="__blank">Proposal</a>
+<a href="proposal.md">Proposal</a>
 
 ### R1.3 Design consideration
  
@@ -40,12 +40,10 @@ The design incorporates:
 3. Realistic physics for bouncing effects.
 4. A simple yet visually pleasing graphics rendering system.
 
-see proposal
-
+<a href="proposal.md">Proposal</a>
 
 ### R1.4 Milestones and schedule
  
-
 Complete? (Yes) 
 
 | Task ID | Description   |  Due date | Lead   |  
@@ -83,8 +81,7 @@ Model-View-Controller, Wikipedia. Retrieved from https://en.wikipedia.org/wiki/M
  
 Complete? (Yes) 
 
-see proposal
-
+<a href="proposal.md">Proposal</a>
 
 
 ## R2 Design & implementation (programming)
@@ -95,27 +92,31 @@ Complete? (Yes)
 
 Collision detection is implemented to detect wall and corner hits. The logo's trajectory and velocity are adjusted based on these collisions, and colors change dynamically.
 
-[image caption](images/demo.png){width=90%}
+[collision algorithm itself](images/collision.png){width=90%}
 
 
 ### R2.2 Completion of the project
  
-
 Complete? (Yes) 
 
-If Yes, insert a screen shot image to show the completion.
+[running program](images/program.png){width=90%}
 
-[image caption](images/demo.png){width=90%}
-
-If No, add a short description to describe the issues encountered.
 
 ### R2.3 New features
  
 Complete? (Yes) 
 
-Dynamic color changes when the logo collides.
-Corner detection and scoring.
-Interactive controls for logo direction.
+- Dynamic color changes when the logo collides with wall.
+
+[color change when logo collides with wall](images/color.png){width=90%}
+
+- Corner detection and scoring.
+
+[scoring system](images/score.png){width=90%}
+
+- Interactive controls for logo direction.
+
+[keyboard control](images/control.png){width=90%}
 
 
 ### R2.4 Program design and organization
@@ -129,25 +130,26 @@ Score Class: Manages scoring logic.
 Font Class: Renders text for messages and score display.
 Main Application: Coordinates user inputs, rendering, and game logic.
 
-Image here
+[Simple MVC Graph](images/MVC.png){width=90%}
 
 ## R3 Delivery (document)
 
 ### R3.1 Presentation & demonstration
  
 
-Complete? (Yes/No) 
+Complete? (Yes) 
 
 If not presented in class, include media file, and add link to the medial file.
 
 
 ### R3.2 Documentation
  
-Complete? (Yes/No) 
+Complete? (Yes) 
 
 Add the hyperlinks to the documents. 
 
-![???](???.html)
+![Proposal](proposal.html)
+![Project Report](project_report.md)
 	
 
 ### R3.3 Submission packaging
