@@ -14,15 +14,11 @@ Check [readme.txt](readme.txt) for course work statement and self-evaluation.
 Complete? (Yes) 
 
 The project involves implementing the iconic DVD Logo Challenge, where the player controls the direction of a bouncing logo to make it hit the screen's corners for points. The primary goal is to combine animation, user interaction, and graphics techniques to create a nostalgic yet engaging experience. 
-
-![proposal](proposal.html)
 	
 
 ### R1.2 Creativity/new features
  
 Complete? (Yes) 
-
-Yes
 
 Highlighted features:
 
@@ -30,6 +26,8 @@ Highlighted features:
 2. Corner collision detection for scoring.
 3. User-controlled direction via arrow keys.
 4. Real-time rendering with visual and functional feedback.
+
+<a href="proposal.html" target="__blank">Proposal</a>
 
 ### R1.3 Design consideration
  
