@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>project_proposal</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="proposal.css" />
+</head>
+<body>
+<h1 id="cp411-project-dvd-logo-challenge">CP411 Project: DVD Logo
+Challenge</h1>
+<p>Author(s): Wen Tao, Chee Kian Teoh</p>
+<p>Date: 2024-11-25</p>
+<h2 id="introduction">Introduction</h2>
+<p>Remember the iconic DVD logo bouncing around a dark screen? This
+simple yet captivating animation sparked excitement as viewers eagerly
+awaited the moment it perfectly hit the corner of the screen. Inspired
+by this nostalgic memory, we present DVD Logo Challenge, an interactive
+2D game that brings this iconic moment to life.</p>
+<p>In this game, players control the movement of the bouncing DVD logo
+using arrow keys, aiming to make it hit the exact corners of the screen
+to score points. The game combines the simplicity of the original
+animation with interactive gameplay, challenging players to plan ahead
+and react quickly to the logo’s changing position.</p>
+<p>The project aims to revive the joy of watching the DVD logo bounce
+while introducing a new layer of engagement through interactivity. It
+will also serve as a hands-on exercise in implementing key computer
+graphics concepts, such as collision detection, real-time rendering, and
+input handling.</p>
+<h2 id="problem-solving-and-algorithms">Problem Solving and
+Algorithms</h2>
+<h3 id="challenges">Challenges</h3>
+<p>To create the DVD Logo Challenge, several technical challenges must
+be addressed:</p>
+<ul class="incremental">
+<li><p><strong>Collision Detection</strong>: The game requires accurate
+detection of when the DVD logo reaches the edges of the screen,
+particularly the corners, to ensure correct scoring and movement
+mechanics.</p></li>
+<li><p><strong>Player-Controlled Movement</strong>: Smooth and intuitive
+player control of the DVD logo’s movement direction using arrow keys,
+without breaking the bouncing physics of the logo.</p></li>
+<li><p><strong>Realistic Bouncing Physics</strong>: Maintaining a
+natural bounce behavior when the logo collides with edges while
+preserving the exact angles of reflection.</p></li>
+<li><p><strong>Dynamic Color Changes</strong>: Implementing color
+transitions when the logo bounces to visually signal
+collisions.</p></li>
+</ul>
+<h3 id="algorithm">Algorithm</h3>
+<p>Collision detection algorithm is implemented to determine whether the
+logo has hit the edges or corners of the screen. The algorithm
+comprises:</p>
+<p><strong>Boundary Detection</strong>: Check if the logo’s center
+position exceeds the screen’s boundaries.</p>
+<blockquote>
+<p>Assuming the screen dimensions are width and height, and the logo’s
+center is (x, y) with a radius r:</p>
+<p>Left boundary: x - r &lt;= 0</p>
+<p>Right boundary: x + r &gt;= width</p>
+<p>Top boundary: y - r &lt;= 0</p>
+<p>Bottom boundary: y + r &gt;= height</p>
+</blockquote>
+<p><strong>Corner Detection</strong>: If the logo meets both a
+horizontal and vertical boundary condition, it is considered to have hit
+a corner.</p>
+<blockquote>
+<p>For example:</p>
+<p>Top-left corner: x - r &lt;= 0 &amp;&amp; y - r &lt;= 0</p>
+<p>Bottom-right corner: x + r &gt;= width &amp;&amp; y + r &gt;=
+height</p>
+</blockquote>
+<p><strong>Pseudocode Example</strong>:</p>
+<pre><code>def detect_collision(x, y, vx, vy, r, width, height):
+    if x - r &lt;= 0 or x + r &gt;= width:
+        vx = -vx  # Invert horizontal velocity
+        if y - r &lt;= 0 or y + r &gt;= height:
+            score += 1  # Corner hit
+    if y - r &lt;= 0 or y + r &gt;= height:
+        vy = -vy  # Invert vertical velocity
+    return vx, vy, score</code></pre>
+<h2 id="design-considerations">Design Considerations</h2>
+<h3 id="system-design">System Design</h3>
+<p><strong>Components and their roles</strong></p>
+<ul class="incremental">
+<li>Edges of the Screen: Define boundaries for collision detection and
+scoring.</li>
+<li>Logo: Represents the moving object, interacting with walls and
+edges.</li>
+<li>Keyboard Inputs: Allows players to control the logo’s moving
+direction through keyboard in real time.</li>
+<li>Score Tracker: Keeps a real-time record of the user’s score when
+corners are hit.</li>
+<li>Rendering System: Ensures a smooth visual experience for the
+player.</li>
+</ul>
+<p><strong>How these components come together</strong></p>
+<p>The logo starts by bouncing off from the corner of the edge of the
+screen. When the player presses an arrow key, it updates the moving
+direction of the logo. The collision detection system checks if the logo
+has hit an edge or corner. The logo bounces and change color, indicate
+that a collision is detected. The score tracker updates the player’s
+score if the collision happens at a corner. The rendering system
+continously updates the screen to reflect these changes in real
+time.</p>
+<p><strong>User Stories</strong></p>
+<ol class="incremental" type="1">
+<li>As a player, I want to use keyboard inputs to control the direction
+of the moving logo so I can aim for the screen corners.</li>
+<li>As a player, I want the logo bounces off walls at the correct
+angle.</li>
+<li>As a player, I want to see the logo changes color when bouncing to
+visually confirm the collision.</li>
+<li>As a player, I want to control the logo to hit the corner of the
+screen to score.</li>
+<li>As a player, I want the game to render in real time so I can see
+instant feedback on my action.</li>
+</ol>
+<h3 id="design-pattern">Design Pattern</h3>
+<p>We will adopt an <strong>MVC (Model, View, Controller)</strong>
+design pattern.</p>
+<p><strong>Model (Game Logic)</strong>, Handles the data and logic:</p>
+<ul class="incremental">
+<li>Keeps track of the logo’s position, velocity, and color.</li>
+<li>Detects collisions and updates the score when the logo hits a
+corner.</li>
+<li>Manages the player’s score and resets the game state if needed.</li>
+</ul>
+<p><strong>View (Rendering)</strong>, manages what the user sees:</p>
+<ul class="incremental">
+<li>Draws the DVD logo, edges, and score on the screen.</li>
+<li>Updates the visuals dynamically (e.g., changes the logo color after
+collisions).</li>
+</ul>
+<p><strong>Controller (Input)</strong>, handles player input:</p>
+<ul class="incremental">
+<li>Processes arrow key presses to move the DVD logo.</li>
+<li>Communicates these actions to the Model to update the logo’s
+position.</li>
+</ul>
+<h2 id="milestones-schedule">Milestones &amp; schedule</h2>
+<p>List of tasks/milestones/check points of your project with time
+schedule. For group project, it needs to provide the roles and tasks of
+each member.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Task ID</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;">Due date</th>
+<th style="text-align: center;">Lead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Project research &amp; team up</td>
+<td style="text-align: center;">Nov 25</td>
+<td style="text-align: center;">Wen Tao</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Project proposal</td>
+<td style="text-align: center;">Nov 26</td>
+<td style="text-align: center;">Chee Kian</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Programming milestones</td>
+<td style="text-align: center;">Nov 28</td>
+<td style="text-align: center;">Both</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Final testing &amp; demo prep</td>
+<td style="text-align: center;">Dec 1</td>
+<td style="text-align: center;">Both</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Project demonstration</td>
+<td style="text-align: center;">Dec 5</td>
+<td style="text-align: center;">Both</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Project submission</td>
+<td style="text-align: center;">Dec 3</td>
+<td style="text-align: center;">Both</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ol class="incremental" type="1">
+<li><p>LearnOpenGL. (n.d.). Collision detection. Retrieved from
+https://learnopengl.com/In-Practice/2D-Game/Collisions/Collision-detection</p></li>
+<li><p>opengl-tutorial.org. (n.d.). Tutorial 6: Keyboard and mouse.
+Retrieved from
+https://www.opengl-tutorial.org/beginners-tutorials/tutorial-6-keyboard-and-mouse/</p></li>
+<li><p>MDN Web Docs. (n.d.). 3D collision detection - Game development
+techniques. Retrieved from
+https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection</p></li>
+<li><p>YouTube. (n.d.). OpenGL video tutorial - Collision detection.
+Retrieved from https://www.youtube.com/watch?v=Lg0kOoiCI80</p></li>
+<li><p>GitHub. (n.d.). jojoth/OpenTK-Course: Learn OpenTK and OpenGL
+game development. Retrieved from
+https://github.com/jojoth/OpenTK-Course</p></li>
+<li><p>DVD Game inspiration, DesignList. Retrieved from
+https://www.designslist.com/dvd</p></li>
+<li><p>Model-View-Controller, Wikipedia. Retrieved from
+https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller</p></li>
+</ol>
+<p><strong>Comments</strong></p>
+<ol class="incremental" type="1">
+<li>Check the project <a href="readme.txt">readme.txt</a> for detailed
+requirements and evaluation. You need to describe and claim new features
+in your project, so it is good (not required) to mention some new
+features in the proposal.</li>
+<li>You may use HTML elements and CSS for better presentation of your
+proposal. For example, this HTML document is generated by using <a
+href="proposal_template.md">proposal_template.md</a> and <a
+href="proposal.css">proposal.css</a> and the following pandoc
+command</li>
+</ol>
+<pre><code>pandoc -s -i proposal_template.md -o proposal_template.html --css=proposal.css --metadata pagetitle=&quot;proposal</code></pre>
+<ol class="incremental" start="3" type="1">
+<li>You can submit your proposal in PDF file format for proposal
+submission.</li>
+</ol>
+</body>
+</html>
