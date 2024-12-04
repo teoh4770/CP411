@@ -1,4 +1,4 @@
-# PROJECT Report
+# Project Report
 
 Author: Wen Tao, Chee Kian Teoh  
 
