@@ -148,9 +148,7 @@ Complete? (Yes)
 
 Add the hyperlinks to the documents. 
 
-![Proposal](proposal.html)
-![Project Report](project_report.md)
-	
+<a href="project_report.md">Project Report</a>
 
 ### R3.3 Submission packaging
 
