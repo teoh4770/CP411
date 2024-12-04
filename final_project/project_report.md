@@ -1,8 +1,8 @@
 # PROJECT Report
 
-Author: ??? 
+Author: Wen Tao, Chee Kian Teoh  
 
-Date: ??? 
+Date: 2024-12-03 
 
 Check [readme.txt](readme.txt) for course work statement and self-evaluation. 
   
@@ -11,26 +11,36 @@ Check [readme.txt](readme.txt) for course work statement and self-evaluation.
 
 ### R1.1 Application problem description
  
+Complete? (Yes) 
 
-Complete? (Yes/No) 
-
-Include the proposal in submission package and add link to the proposal. 
+The project involves implementing the iconic DVD Logo Challenge, where the player controls the direction of a bouncing logo to make it hit the screen's corners for points. The primary goal is to combine animation, user interaction, and graphics techniques to create a nostalgic yet engaging experience. 
 
 ![proposal](proposal.html)
 	
 
 ### R1.2 Creativity/new features
  
+Complete? (Yes) 
 
-Complete? (Yes/No) 
+Yes
 
-Add a few words to high light.
+Highlighted features:
 
+1. Dynamic color changes upon collision.
+2. Corner collision detection for scoring.
+3. User-controlled direction via arrow keys.
+4. Real-time rendering with visual and functional feedback.
 
 ### R1.3 Design consideration
  
+Complete? (Yes)
 
-Complete? (Yes/No) 
+The design incorporates:
+
+1. Accurate collision detection for walls and corners.
+2. User interaction with smooth response to keyboard inputs.
+3. Realistic physics for bouncing effects.
+4. A simple yet visually pleasing graphics rendering system.
 
 see proposal
 
